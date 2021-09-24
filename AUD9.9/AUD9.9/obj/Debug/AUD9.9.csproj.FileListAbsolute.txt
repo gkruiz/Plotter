@@ -1,0 +1,13 @@
+c:\users\kruiz9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\bin\Debug\AUD9.9.exe.config
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9.9.csprojResolveAssemblyReference.cache
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\cubo3d.baml
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\cubo3d.g.cs
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9.9_MarkupCompile.cache
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9.9.g.resources
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9._9.Form1.resources
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9._9.Properties.Resources.resources
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9.9.csproj.GenerateResource.Cache
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\bin\Debug\AUD9.9.exe
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\bin\Debug\AUD9.9.pdb
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9.9.exe
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9.9.pdb

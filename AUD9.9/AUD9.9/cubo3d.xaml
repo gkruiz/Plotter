@@ -1,0 +1,1057 @@
+﻿<UserControl x:Class="AUD9._9.cubo3d"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="560.574" Width="749.634">
+    <Grid Margin="0,8,102,-11" x:Name="grid">
+        <Viewport3D x:Name="viewport3D1" Margin="52,22,3,24" RenderTransformOrigin="0.806,0.464">
+            <Viewport3D.Camera>
+                <PerspectiveCamera x:Name="camMain" Position="6 5 4" LookDirection="-6 -5 -4"/>
+            </Viewport3D.Camera>
+
+
+            <ModelVisual3D >
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="group">
+                        <AmbientLight Color="Yellow" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="-2.542" OffsetX="1.273" OffsetY="0.86"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelo">
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="color"  />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry>
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D x:Name="panel1" Positions="
+                                                0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatex" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatey" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatez" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="group2">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelo2">
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="color1" />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry>
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D x:Name="panel2" Positions="
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatex2" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatey2" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatez2" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate12" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+
+            <!--inicia ventanas-->
+            <ModelVisual3D >
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="groupv" >
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelov" >
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="colorv" Brush="SkyBlue"  />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry >
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D  x:Name="modelova" Positions="2.01,0.5,0.5
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                " 
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatexv" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotateyv" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatezv" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1v" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="groupv2">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelov2" >
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="colorv1" Brush="SkyBlue"  />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry >
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D x:Name="modelovs" Positions="
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                               0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatexv2" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotateyv2" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatezv2" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1v2" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="groupv3">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="0.044" OffsetX="-1.298" OffsetY="1.885"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelov3">
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="colorv2" Brush="SkyBlue" />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry>
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D  x:Name="modelovd" Positions="
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatexv3" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotateyv3" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatezv3" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1v3" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="groupv5">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelov5">
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="colorv3" Brush="SkyBlue"/>
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry>
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D x:Name="modelovf" Positions="
+                                               
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                 0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatexv5" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotateyv5" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatezv5" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1v5" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+            <!--fin ventanas-->
+
+
+
+
+
+
+
+            <!--inicio puertas-->
+            <ModelVisual3D >
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="groupp" >
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelop" >
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="colorp"  />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry >
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D x:Name="puertap0" Positions="
+                                                2.02, 0, 0.6
+                                                2.02, 0, 1.4
+                                                2.02, 1.4, 1.4
+                                                2.02, 1.4, 0.6
+                                                
+                                               2.02, 0, 0.6
+                                                2.02, 0, 1.4
+                                                2.02, 1.4, 1.4
+                                                2.02, 1.4, 0.6
+                                                
+                                                " 
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatexp" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotateyp" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatezp" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1p" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="groupp2">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelop2" >
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="colorp1"  />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry >
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D  x:Name="puerta1p" Positions="
+                                                -0.02,0,0.6
+                                                -0.02, 0, 1.4
+                                                -0.02, 1.4, 1.4
+                                                -0.02, 1.4, 0.6
+                                                
+                                              -0.02,0,0.6
+                                                -0.02, 0, 1.4
+                                                -0.02, 1.4, 1.4
+                                                -0.02, 1.4, 0.6
+                                                
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatexp2" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotateyp2" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatezp2" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1p2" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="groupp3">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="0.044" OffsetX="-1.298" OffsetY="1.885"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelop3">
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="colorp2" />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry>
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D x:Name="puerta2p" Positions="
+                                                1.4, 1.4, -0.02
+                                                0.6, 1.4, -0.02
+                                                0.6,0,-0.02
+                                                1.4, 0,-0.02
+                                                
+                                                1.4, 1.4, -0.02
+                                                0.6, 1.4, -0.02
+                                                0.6,0,-0.02
+                                                1.4, 0,-0.02
+                                                
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatexp3" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotateyp3" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatezp3" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1p3" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="groupp5">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelop5">
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="colorp3" />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry>
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D x:Name="puerta3p" Positions="
+                                                0.6,0,2.02
+                                                1.4, 0, 2.02
+                                                1.4, 1.4, 2.02
+                                                0.6, 1.4, 2.02
+                                                
+                                                0.6,0,2.02
+                                                1.4, 0, 2.02
+                                                1.4, 1.4, 2.02
+                                                0.6, 1.4, 2.02
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatexp5" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotateyp5" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatezp5" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate1p5" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+            <!--finpuertas-->
+
+
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="group3">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelo3" >
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="color2" />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry >
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D  x:Name="panel3"  Positions="
+                                                0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatex3" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatey3" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatez3" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate13" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="group5">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="1.134" OffsetX="-1.472" OffsetY="1.222"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelo5">
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial x:Name="color3" />
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry>
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D  x:Name="panel5"   Positions="
+                                                0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                
+                                                0, 0, 0
+                                                0, 0, 0
+                                                0,0,0
+                                                0, 0, 0
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatex5" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatey5" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatez5" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate15" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+            <!--suelo-->
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup x:Name="group6">
+                        <AmbientLight Color="Gray" >
+                            <AmbientLight.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0">
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,1,0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                    <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="0"/>
+                                    <TranslateTransform3D OffsetZ="-2.639" OffsetX="1.331" OffsetY="0.872"/>
+                                </Transform3DGroup>
+                            </AmbientLight.Transform>
+                        </AmbientLight>
+                        <GeometryModel3D x:Name="modelo6">
+
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial  x:Name="suelox" Brush="Gray"/>
+                            </GeometryModel3D.Material>
+                            <GeometryModel3D.Geometry>
+
+                                <!-- Left: Corner Normal is (-1, 1, 2) -->
+                                <MeshGeometry3D Positions="
+                                                -2,0,3.9
+                                                3.9, 0, 3.9
+                                                3.9, 0, -2
+                                                -2, 0,-2
+                                                
+                                                -2,0,3.9
+                                                3.9, 0, 3.9
+                                                3.9, 0, -2
+                                                -2, 0,-2
+                                                "
+
+                                        TriangleIndices="0,1,2,2,3,0,6,5,4,4,7,6,1,5,2,5,6,2,2,6,3,3,6,7,5,1,0,0,4,5,4,0,3,3,7,4" />
+                            </GeometryModel3D.Geometry>
+
+
+
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatex6" Axis="1 0 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatey6" Axis="0 1 0" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="rotatez6" Axis="0 0 1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+
+                                    <TranslateTransform3D x:Name="translate16" OffsetX="0" OffsetY="0" OffsetZ="0" />
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+
+                        </GeometryModel3D>
+
+
+
+
+                    </Model3DGroup>
+
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+
+        </Viewport3D>
+        <Slider Name="SL1" HorizontalAlignment="Left" Margin="20,9,0,0" VerticalAlignment="Top" Width="611" Minimum="-100" Maximum="100" ValueChanged="Slider_ValueChanged" Height="24"/>
+        <Slider x:Name="SL2" HorizontalAlignment="Left" Margin="20,42,0,0" VerticalAlignment="Top" Width="611" Minimum="-100" Maximum="100" ValueChanged="Slider_ValueChanged2" Height="24"/>
+        <Slider x:Name="SL3" HorizontalAlignment="Left" Margin="20,78,0,0" VerticalAlignment="Top" Width="610" Minimum="-100" Maximum="100" ValueChanged="Slider_ValueChanged3" Height="19"/>
+
+    </Grid>
+</UserControl>

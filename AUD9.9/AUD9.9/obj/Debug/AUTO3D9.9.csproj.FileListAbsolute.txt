@@ -1,0 +1,3 @@
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\bin\Debug\AUD9.9.exe.config
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9.9.exe
+C:\Users\KRUIZ9\documents\visual studio 2013\Projects\AUD9.9\AUD9.9\obj\Debug\AUD9.9.pdb
